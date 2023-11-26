@@ -1,0 +1,14 @@
+<div class="loader-container" *ngIf="isLoading">
+  <div class="loader">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<div *ngIf="!isLoading" class="data-container">
+  <p>Data ID:</p>
+  <p>{{ data.id }}</p>
+  <p>Data Title:</p>
+  <p>{{ data.title }}</p>
+  <p>Data Body:</p>
+  <p>{{ data.body }}</p>
+</div>
